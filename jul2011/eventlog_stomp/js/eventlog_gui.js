@@ -10,7 +10,7 @@ nodes.get_root_node = function() {
             "data": {
                 "$color": "#ff5500",
                 "$type": "circle",
-                "$dim": 50
+                "$dim": 100
             },
             "id": "rabbit",
             "name": "RabbitMQ"
@@ -43,7 +43,7 @@ nodes.create_node_json = function (node_id, node_name, node_to, node_type) {
                     "data": {
                         "$color": nodecolor,
                         "$type": nodetype,
-                        "$dim": 15
+                        "$dim": 30
                     },
                     "id": node_id,
                     "name": node_name
@@ -144,12 +144,12 @@ nodes.init = function (){
         Edge: {
             overridable: true,
             color: '#23A4FF',
-            lineWidth: 2.0
+            lineWidth: 4.0
         },
         //Native canvas text styling
         Label: {
             type: labelType, //Native or HTML
-            size: 15,
+            size: 22,
             style: 'bold'
         },
         //Add Tips
@@ -203,7 +203,7 @@ nodes.init = function (){
         //Number of iterations for the FD algorithm
         iterations: 20,
         //Edge length
-        levelDistance: 150,
+        levelDistance: 200,
         // Add text to the labels. This method is only triggered
         // on label creation and only for DOM labels (not native canvas ones).
         onCreateLabel: function(domElement, node){

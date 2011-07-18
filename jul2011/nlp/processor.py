@@ -1,4 +1,13 @@
-""" Processor demo.
+""" Processor imitation.
+
+! Does not process anything, only writes log to RabbitMQ.
+! Does not handle errors.
+
+The following provides almost the same functionality as this 'processor':
+>> amqp-consume -e exchtopic -r rproc cat 
+or 
+>> amqp-consume -q proc cat
+
 """
 __author__ = "Alexander Abushkevich"
 __version__ = "0.1a"
